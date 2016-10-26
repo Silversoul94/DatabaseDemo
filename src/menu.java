@@ -5,9 +5,6 @@ public class menu {
 
 	private static  Scanner keyboard = new Scanner(System.in);
 	public static void main(String[] args) {
-		Xcom xcom = new Xcom();
-		Items items = new Items();
-		XcomClass xClass = new XcomClass();
 		MenuSetup setup = new MenuSetup();
 		// TODO Auto-generated method stub
 
@@ -33,7 +30,7 @@ public class menu {
 			System.out.println("next tabell is items ");
 		} 
 		
-		System.out.println("would you like to pick items tabell yes =3/ no = 4");
+		System.out.println("would you like to pick items tabell yes =1/ no = 2");
 		int choice2 = keyboard.nextInt();
 		if(choice2 == 1){
 			System.out.println("pick items");
@@ -44,13 +41,13 @@ public class menu {
 			System.out.println(queue.peek());
 			System.out.println("next tabell class");
 		}
-		System.out.println("would you like to pick class tabellyes =5/ no = 6");
+		System.out.println("would you like to pick class tabell yes =1/ no = 2");
 		int choice3 = keyboard.nextInt();
-		if(choice3 == 5){
+		if(choice3 == 1){
 			System.out.println("pick class");
 			queue.poll();
 			setup.useClass();
-		}else if (choice3 ==6) {
+		}else if (choice3 ==2) {
 			queue.remove("class");
 			System.out.println(queue.peek());
 			System.out.println("the queue is empty");
